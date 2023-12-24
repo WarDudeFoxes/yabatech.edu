@@ -1,0 +1,204 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 40px;
+}::-webkit-scrollbar {
+  display: none;
+}
+
+
+.portal-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid gainsboro;
+  border-radius: 5px;
+  padding-bottom: 25px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+  padding-top: 20px;
+}
+
+.header-1 {
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.header-2 {
+  opacity: .86;
+  text-align: center;
+  font-size: .9rem;
+}
+
+img {
+  width: 75px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin-top: 30px;
+  row-gap: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+label span {
+  opacity: .65;
+}
+
+input {
+  padding: 12px;
+  border-radius: 5px;
+  outline-color: lightblue;
+  border: 1px solid gainsboro;
+}
+
+::placeholder {
+  font-size: 1rem;
+}
+
+.buttom-content {
+  font-size: 1rem;
+  opacity: .8;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 4, 255);
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.options a:visited {
+  color: blue;
+}
+
+.sign-in-button{
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0 .15);
+  background-color: #198754; 
+  font-size: .85rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: filter .4s;
+  text-align: center;
+}
+
+.sign-in-button:hover {
+  filter: brightness(.9);
+}
+
+@media (min-width: 421px) and (max-width: 950px) {
+    
+  .portal-container {
+    width: 60%;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    padding-top: 15px;
+  }
+  img {
+    width: 60px;
+  }
+  .portal-container {
+    width: 90%;
+    padding-bottom: 10px;
+  }
+  
+  .header-1 {
+    font-size: .78rem;
+    text-align: center;
+  }
+  
+  .header-2 {
+   font-size: .72rem;
+  }
+
+  form {
+    margin-top: 20px;
+    row-gap: 15px;
+    width: 85%;
+  }
+  
+  label span {
+    font-size: .72rem;
+  }
+  
+  input {
+    padding: 8px;
+  }
+  ::placeholder {
+    font-size: .72rem;
+  }
+  
+  .buttom-content {
+    font-size: .7rem;
+    opacity: .8;
+  }
+  
+
+  .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  
+  .sign-in-button{
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0 .15);
+    background-color: #198754; 
+    font-size: .7rem;
+    width: 100px;
+    padding: 0;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: filter .4s;
+  }
+
+  .options a {
+    font-size: .7rem;
+    text-align: center;
+    width: 100px;
+  }
+
+  
+  .sign-in-button:hover {
+    filter: brightness(.9);
+  }
+}

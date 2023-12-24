@@ -1,0 +1,821 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+i {
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: rgb(4, 58, 4);
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 0 8%;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  max-width: 500px;
+}
+
+.left-section img {
+  width: 40px;
+  cursor: pointer;
+}
+
+.element  {
+  display: flex;
+  column-gap: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.pop-option-container {
+  background-color: white;
+  height: 100px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  row-gap: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+}
+
+.link {
+  display: flex;
+  color: black;
+  column-gap: 5px;
+}
+
+.link img {
+  width: 20px;
+}
+
+.link span {
+  font-size: .8rem;
+  opacity: .8;
+}
+
+.js-college-home, .js-helpdesk, .js-settings, .js-other-link {
+  font-weight: 600;
+  opacity: .5;
+  font-size: .85rem;
+}
+
+.js-dashboard {
+  opacity: .8;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+.element span {
+  cursor: pointer;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  column-gap: 15px;
+  justify-content: space-between;
+  position: relative;
+}
+.profile-name {
+  font-size: .8rem;
+}
+.right-section img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.fa-power-off {
+  color: yellow;
+}
+
+.fa-bars, .fa-times {
+  border: 1px solid gainsboro;
+  padding: 4px 6px;
+  font-size: 1.5rem;
+  opacity: .65;
+  display: none;
+}
+
+.logout-text {
+  font-size: .8rem;
+  text-decoration:none;
+  color: white;
+}
+
+.logout-link {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.logout-link i {
+  font-size: .8rem;
+}
+
+
+@media (min-width: 621px) and (max-width: 935px){
+   .left-section img{
+    margin-left: 0px;
+  }
+  
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 10px;
+  }
+
+  .right-section,   .element {
+    display: none;
+  }
+
+  .fa-bars, .fa-times {
+    display: inline;
+  } 
+} 
+
+.content-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.dashboard-content {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.profile-column {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  margin-right: 20px;
+}
+
+.image-number-cont {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gainsboro;
+  max-width: 100%;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.image-number-cont img{
+  width: 100%;
+}
+
+.fa-circle-user {
+  color: gray;
+}
+
+.phone-number {
+  color: rgb(10, 121, 195);
+  font-weight: 600;
+  margin: 20px;
+}
+
+.name-course-programe {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-top: 20px;
+}
+
+.profile-name-cap {
+  font-weight: 600;
+  font-size: .75rem;
+  opacity: .75;
+}
+
+.programe-course {
+  font-size: .65rem;
+  opacity: .7;
+}
+
+.course-materials {
+  padding: 10px 0;
+  margin: 13px 0;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+
+.course-materials span{
+  background-color: rgb(245, 245, 245);
+  font-size: .7rem;
+  color: rgb(195, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.session-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.cont {
+  row-gap: 0;
+}
+
+.session-container .cont .title {
+  font-size: .7rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.session-container i{
+  color: rgb(31, 215, 215);
+}
+
+.session-status {
+  display: flex;
+  column-gap: 10px;
+  width: 100%;
+}
+
+.session-status span {
+  font-size: .81rem;
+  font-weight: 600;
+  opacity: .75;
+}
+
+.dashboard-options-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 70%;
+}
+
+.dashboard-options-column img {
+  width: 40px;
+}
+
+.column-icon {
+  margin-top: 10px;
+}
+
+.dash-row {
+  
+}
+
+.title {
+  font-size: 1.19rem;
+  opacity: .8;
+}
+
+.data-fee-container {
+  display: flex;
+  column-gap: 25px;
+  border-top: 1px solid gainsboro;
+  padding-top: 25px;
+}
+
+.biodata-link , .payment-receipt {
+  display: flex;
+  align-items: center;
+  border: 1px solid gainsboro;
+  padding: 15px 20px;
+  column-gap: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.text span {
+  font-weight: 600;
+  font-size: .76rem;
+  opacity: .75;
+}
+
+.text small {
+  font-size: .7rem;
+  line-height: 15px;
+}
+
+
+.biodata-cont {
+  width: 70%;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin: 0 0 25px 0;
+}
+
+.data-row {
+  display: flex;
+  border-top: 1px solid gainsboro;
+  padding: 12px;
+  width: 90%;
+}
+
+.column-1 {
+  width: 35%;
+  font-size: .77rem;
+}
+
+.column-1 span {
+  opacity: .75;
+}
+
+.column-1 i {
+  color: rgb(31, 215, 215);
+}
+
+.column-2 {
+  font-weight: 600;
+  opacity: .75;
+  font-size: .8rem;
+  width: 55%;
+}
+
+.bio-data-options {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  margin-top: 20px;
+}
+
+.bio-data-options a {
+  background-color: rgb(245, 245, 245);
+  text-decoration: none;
+  color: rgb(0, 132, 255);
+  padding: 8px;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.settings-title {
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+}
+
+.settings-image-content, .settings-password-content {
+  border-top: 1px solid gainsboro;
+  padding-top: 20px;
+}
+
+.top-note, .password-top-note {
+  color: rgb(205, 39, 39);
+  font-size: .8rem;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.upload-container {
+  position: relative;
+}
+
+.image-container i {
+  color: gray;
+  margin-top: 20px;
+
+}
+
+.upload-container input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  opacity: .005;
+}
+
+.settings-password-content {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.password-conatainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.password-conatainer input {
+  padding: 9px;
+  border-radius: 5px;
+  border: 1px gainsboro solid;
+  outline-color: lightblue;
+  width: 70%;
+}
+::placeholder {
+
+}
+
+.password-top-note {
+  width: 70%;
+}
+
+
+
+@media (min-width: 621px) and (max-width: 850px) {
+            
+  .dashboard-content {
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .profile-column {
+    width: 35%;
+    margin-right: 20px;
+  }
+
+
+  .dashboard-options-column {
+    width: 65%;
+  }
+
+  .data-fee-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    border-top: 1px solid gainsboro;
+    padding-top: 25px;
+  }
+  
+  .biodata-cont {
+    width: 100vw;
+    overflow-x: scroll;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin: 0 0 25px 0;
+  }
+  
+  .data-row {
+    display: flex;
+    border-top: 1px solid gainsboro;
+    padding: 12px;
+    width: fit-content;
+  }
+  
+  .column-1 {
+    width: 200px;
+    font-size: .77rem;
+  }
+  
+  .column-2 {
+    font-weight: 600;
+    opacity: .75;
+    font-size: .8rem;
+    width: 500px;
+  }
+    
+  .settings-title {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+  }
+
+  .settings-image-content, .settings-password-content {
+    border-top: 1px solid gainsboro;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .top-note, .password-top-note {
+    color: rgb(205, 39, 39);
+    font-size: .8rem;
+    text-align: center;
+  }
+
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-container img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .settings-password-content {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .password-conatainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 15px;
+    align-items: center;
+  }
+
+  .password-conatainer input {
+    width: 70%;
+  }
+  ::placeholder {
+
+  }
+
+  .password-top-note {
+    width: 100%;
+  }
+
+
+}
+
+
+@media (max-width: 621px) {
+  .fa-bars, .fa-times {
+    display: inline;
+    margin-right: 10px;
+  } 
+
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 10px;
+    height: 60px;
+  }
+
+  .left-section {
+    margin-left: 10px;
+  }
+
+  .right-section {
+    margin-right: 20px;
+    display: none;
+  }
+
+  .element {
+    display: none; 
+  }
+
+  .fa-bars, .fa-times {
+    display: inline;
+  }
+
+  .profile-column {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .dashboard-options-column {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .content-container {
+    width: 100%;
+
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .data-fee-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    border-top: 1px solid gainsboro;
+    padding-top: 25px;
+  }
+
+  .biodata-cont {
+    width: 100vw;
+    overflow-x: scroll;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin: 0 0 25px 0;
+  }
+  
+  .data-row {
+    display: flex;
+    border-top: 1px solid gainsboro;
+    padding: 12px;
+    width: fit-content;
+  }
+  
+  .column-1 {
+    width: 200px;
+    font-size: .77rem;
+  }
+  
+  .column-2 {
+    font-weight: 600;
+    opacity: .75;
+    font-size: .8rem;
+    width: 500px;
+  }
+  
+  .bio-data-options {
+    column-gap: 0px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .bio-data-options a {
+    padding: 0px ;
+    width: initial;
+  }
+
+  .print {
+    display: none;
+  }
+
+  .settings-title {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .settings-image-content, .settings-password-content {
+    border-top: 1px solid gainsboro;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .top-note, .password-top-note {
+    color: rgb(205, 39, 39);
+    font-size: .8rem;
+    text-align: center;
+  }
+
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-container img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .settings-password-content {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .password-conatainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 15px;
+    align-items: center;
+  }
+
+  .password-conatainer input {
+    width: 100%;
+  }
+  ::placeholder {
+
+  }
+
+  .password-top-note {
+    width: 100%;
+  }
+}
+
+.new-navbar {
+  height: fit-content;
+  display: flex;
+  align-items: start;
+  padding: 10px 10px;
+  transition: all .4s;
+}
+
+.new-section {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.new-left-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: start;
+  width: 100%;
+}
+
+.new-right-section {
+  display: flex;
+  margin: 0;
+  margin-left: 10px;
+  column-gap: 5px;
+  font-size: .8rem;
+  width: 100%;
+}
+
+.new-element {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  align-items: start;
+  width: 100%;
+}
+
+.new-element-span {
+  width: 100%;
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.static {
+  position: static;
+  margin-top: 10px;
+}
+
+.opacity {
+  opacity: 1;
+}

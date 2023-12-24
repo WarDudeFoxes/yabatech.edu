@@ -1,0 +1,673 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif,Arial;
+  padding-bottom: 100px;
+  background-color: #198754; 
+  display: flex;
+  justify-content: center;
+  margin: 20px 10%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.application-conatiner {
+  display: flex;
+}
+
+.application-instruction-container {
+  width: 45%;
+  background-color: white;
+  padding: 30px 0 25px 15px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.header img {
+  width: 80px;
+}
+
+.header div {
+  margin: 0;
+  font-size: 1.5rem;
+  font-size: 400;
+}
+
+.application-instruction-content h4 {
+  font-weight: 400;
+  color: black;
+}
+
+.step {
+  margin-bottom: 10px;
+  font-size: 900;
+}
+
+.instruction-conaitner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+
+.li {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-left: 10px;
+  margin: 10px;
+}
+
+.li div {
+  font-size: .9rem;
+  opacity: .6;
+  line-height: 25px;
+}
+
+.application-warning {
+  color: red;
+  font-size: 1.15rem;
+  line-height: 30px;
+  margin-top: 20px;
+  opacity: .55;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.signup-general-container {
+  width: 55%;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 5px;
+  background-color: hsl(208, 100%, 99%);
+  padding-right: 5px;
+}
+
+.applicatin-signup {
+  width: initial;
+  background-color: hsl(208, 100%, 99%);
+  border: 1px solid gainsboro;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  position: relative;
+  padding-top: 30px;
+  border-radius: 10px;
+}
+
+.applicatin-signup .header {
+  background-color: hsl(208, 100%, 99%);
+  font-size: 1.25rem;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.application-form {
+  border: 1px solid gainsboro;
+  padding: 10px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.names-num-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+  width: 100%;
+}
+
+.names-num-grid input {
+  width: 100%;
+}
+
+.input-container {
+  width: 100%;
+}
+
+.input-container div,select {
+  color: rgb(128, 128, 128);
+}
+
+.input-container input {
+  border: 1px gainsboro solid;
+  outline-color: lightblue;
+  padding: 8px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  font-size: 1rem;
+}
+
+.email-input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.gender-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gender-data select, .program-section select {
+  border: 1px gainsboro solid;
+  outline-color: lightblue;
+  padding: 8px 10px;
+  width: 30%;
+  -webkit-appearance: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.gender {
+  width: 30%;
+}
+
+.gender select {
+  width: 70%;
+}
+
+.date {
+  width: 60%;
+}
+
+.dob {
+  display: flex;
+  width: 100%;
+  column-gap: 3%;
+}
+
+
+.dob input {
+  width: 30%;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.signup-note {
+  color: rgb(27, 31, 255);
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: .6;
+  font-size: .9rem;
+}
+
+.program-section {
+  display: flex;
+  width: 100%;
+}
+
+.program-section select {
+  width: 80%;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-container {
+  width: 48%;
+}
+
+.home-address {
+  width: 100%;
+  border: 1px gainsboro solid;
+  outline-color: lightblue;
+  padding: 8px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.state-of-origin {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2px;
+  align-items: center;
+}
+
+.state-of-origin select {
+  border: 1px gainsboro solid;
+  outline-color: lightblue;
+  padding: 7px 10px;
+  -webkit-appearance: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.state-cont {
+  width: 50%;
+  margin-right: 10px;
+}
+
+
+.state-of-origin input {
+  border: 1px gainsboro solid;
+  outline-color: lightblue;
+  padding: 8px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.local-cont {
+  width: 50%;
+}
+
+.application-agreement {
+  display: flex;
+  align-items: start;
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+.application-agreement input{
+  cursor: pointer;
+}
+
+.agreement-note {
+  color: rgb(239, 65, 65);
+  font-weight: 400;
+  font-size: .9rem;
+  word-spacing: 2px;
+  letter-spacing: .009rem;
+}
+
+button {
+  background-color:  #198754;
+  padding: 10px;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.buttom-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 25px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+
+.copyright {
+  position: fixed;
+  background-color: #1A5010;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+.copyright-text {
+  margin: 0 20px;
+  text-align: center;
+  color: white;
+  opacity: .5;
+  font-size: .9rem;
+}
+
+select {
+  border-radius: 5px;
+}
+
+
+@media (min-width: 421px) and (max-width: 800px) {
+  body {
+    margin: 0;
+    font-family: sans-serif,Arial;
+    padding-bottom: 50px;
+    background-color: #198754; 
+    display: flex;
+    justify-content: center;
+    margin: 10px 1%;
+  }
+  
+  .application-conatiner {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .application-instruction-container {
+    width: 100%;
+    background-color: white;
+    padding: 30px 0 25px 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+    
+  .signup-general-container {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 5px;
+    background-color: hsl(208, 100%, 99%);
+    padding-right: 5px;
+  }
+
+  .application-form {
+    border: 1px solid gainsboro;
+    padding: 10px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .address-container {
+    width: 100%;
+  }
+  .state-of-origin {
+    width: 100%;
+    column-gap: 10px;
+  }
+      
+}
+
+@media (max-width: 420px) {
+
+  body {
+    margin: 0;
+    font-family: sans-serif,Arial;
+    padding-bottom: 50px;
+    background-color: #198754; 
+    display: flex;
+    justify-content: center;
+    margin: 10px 1%;
+  }
+  
+  .application-conatiner {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .application-instruction-container {
+    width: 100%;
+    background-color: white;
+    padding: 30px 0 25px 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+    
+  .signup-general-container {
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 5px;
+    background-color: hsl(208, 100%, 99%);
+    padding-right: 5px;
+  }
+
+  .application-form {
+    border: 1px solid gainsboro;
+    padding: 10px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .header img {
+    width: 60px;
+  }
+
+  .header div {
+    margin: 0;
+    font-size: 1.2rem;
+    font-size: 400;
+  }
+
+  .application-instruction-content h4 {
+    font-size: .9rem;
+  }
+
+  .step {
+    margin-bottom: 5px;
+    font-size: .88rem;
+  }
+
+  .instruction-conaitner {
+    row-gap: 10px;
+  }
+
+  .li {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin: 10px;
+  }
+
+  .li div {
+    font-size: .85rem;
+    opacity: .6;
+    line-height: 19px;
+    text-align: justify;
+  }
+
+  .li strong {
+    font-size: .9rem;
+  }
+
+  .application-warning {
+    color: red;
+    font-size: .915rem;
+    line-height: 25px;
+    margin-top: 15px;
+    opacity: .55;
+    font-weight: 400;
+    margin: 10px;
+  }
+
+  .applicatin-signup {
+    padding: 15px;
+    position: relative;
+    padding-top: 30px;
+    border-radius: 10px;
+  }
+
+  .applicatin-signup .header {
+    font-size: .955rem;
+    top: 22px;
+    left: 30px;
+  }
+
+  .names-num-grid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 100%;
+  }
+
+  .input-container div,select {
+    font-size: .83rem;
+  }
+
+  .input-container input {
+    border: 1px gainsboro solid;
+    outline-color: lightblue;
+    padding: 8px 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  ::placeholder {
+    font-size: .8rem;
+  }
+
+
+  .gender-data {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 15px;
+  }
+
+  .gender-data select, .program-section select {
+    border: 1px gainsboro solid;
+    outline-color: lightblue;
+    padding: 8px 10px;
+    width: 100%;
+    -webkit-appearance: none;
+    font-size: .8rem;
+  }
+
+  .gender {
+    width: 100%;
+
+  }
+
+  .gender select {
+    width: 70px;
+  }
+
+  .date {
+    width: 100%;
+  }
+
+  .dob {
+    display: flex;
+    width: 100%;
+    column-gap: 3%;
+  }
+  
+
+  .dob input {
+    width: 100%;
+    font-weight: 400;
+  }
+
+  .dob select {
+    font-size: .8rem;
+  }
+
+  .dob input::placeholder {
+    font-size: .8rem;
+  }
+
+  .signup-note {
+    color: rgb(27, 31, 255);
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: .6;
+    font-size: .8rem;
+  }
+
+  .program-section {
+    display: flex;
+    width: 125px;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+
+  .program-section select {
+    width: 100%;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .address-container {
+    width: 100%;
+  }
+  .state-of-origin {
+    width: 100%;
+    column-gap: 10px;
+  }
+
+  .state-cont select {
+    font-size: .8rem;
+  }
+
+  .application-agreement {
+    display: flex;
+    align-items: start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    column-gap: 5px;
+  }
+
+  .agreement-note {
+    color: rgb(239, 65, 65);
+    font-weight: 400;
+    font-size: .7rem;
+    word-spacing: 2px;
+    letter-spacing: .009rem;
+  }
+
+  button {
+    background-color:  #198754;
+    padding: 8px;
+    font-size: .8rem;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .buttom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    margin-top: 15px;
+    font-size: .7rem;
+  }
+
+
+  .copyright {
+    position: fixed;
+    background-color: #1A5010;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  }
+
+  .copyright-text {
+    margin: 0 20px;
+    text-align: center;
+    color: white;
+    opacity: .5;
+    font-size: .7rem;
+  }
+
+}

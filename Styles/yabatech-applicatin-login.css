@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #198754; 
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.login-portal-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #198754; 
+  padding-bottom: 100px;
+  padding-top: 40px;
+}
+
+.login-portal-container img {
+  width: 80px;
+}
+
+.title {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.yct-application-content {
+  background-color: white;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  border-radius: 6px;
+}
+
+.login-text {
+  margin-top: 20px;
+  opacity: .65;
+}
+
+.form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+label div {
+  opacity: .65;
+}
+
+label input {
+  width: 100%;
+  outline-color: lightblue;
+  padding: 13px;
+  border-radius: 5px;
+  border: 0;
+}
+::placeholder {
+  font-size: 1rem;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  height: 46px;
+  border: 1px gainsboro solid;
+  border-radius: 4px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+i {
+  border-right: 1px gainsboro solid;
+}
+
+.form a {
+  width: 100%;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 13px;
+  color: white;
+  background-color: #198754;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: filter .4s;
+  width: 100%;
+}
+
+button:hover {
+  filter: brightness(.8);
+}
+
+a {
+  color: white;
+}
+
+.bottom-text {
+  color: white;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  align-items: center;
+  width: 30%;
+  text-align: center;
+}
+
+
+.home{
+  opacity: .5;
+}
+
+@media (min-width: 421px) and (max-width: 800px) {
+  
+  .yct-application-content {
+    background-color: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    border-radius: 6px;
+  }
+
+  .bottom-text {
+    width: 50%;
+  }
+}
+
+@media (max-width: 420px) {
+    
+  .login-portal-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #198754; 
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+
+  .login-portal-container img {
+    width: 65px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+  }
+
+  .yct-application-content {
+    width: 90%;
+    row-gap: 10px;
+    padding-top: 10px;
+  }
+
+  .login-text {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  label div {
+    opacity: .65;
+    font-size: .85rem;
+  }
+
+  label input {
+    width: 100%;
+    outline-color: lightblue;
+    padding: 8px;
+  }
+  ::placeholder {
+    font-size: .9rem;
+  }
+
+  .input-container {
+    height: 36px;
+    border: 1px gainsboro solid;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+  }
+
+  button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .bottom-text {
+    color: white;
+    margin-top: 10px;
+    row-gap: 10px;
+    width: 95%;
+    font-size: .85rem;
+  }
+
+
+  .home{
+    opacity: .5;
+    font-size: .7rem;
+  }
+}
+
+
+small {
+  font-size: .65rem;
+  background-color: rgba(255, 0, 0, 0.163);
+  width: 100%;
+  padding: 4px 5px;
+  color: red;
+  margin: -5px 0 -8px 0;
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+}
