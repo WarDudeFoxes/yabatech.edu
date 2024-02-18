@@ -58,7 +58,7 @@ img {
   border-radius: 5px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   
   .nabar {
     height: 105px;

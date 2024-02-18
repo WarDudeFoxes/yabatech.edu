@@ -5,7 +5,8 @@
 body {
   font-family: sans-serif, Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: hsl(190, 30%, 96%);
+  background: linear-gradient( to bottom,hsl(190, 30%, 96%),  whitesmoke);
+  /* background-color:  */
   display: flex;
   justify-content: center;
   padding-top: 60px;
@@ -78,7 +79,7 @@ button {
   background-color: rgb(16, 126, 16);
 }
 
-@media (min-width: 421px) and (max-width: 800px) {
+@media (min-width: 451px) and (max-width: 800px) {
   .portal-content {
     background-color: white;
     display: flex;
@@ -92,7 +93,14 @@ button {
   }
 }
 
-@media(max-width: 420px) {
+@media(max-width: 450px) {
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .portal-content {
     background-color: white;
     display: flex;

@@ -101,7 +101,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 421px) and (max-width: 800px) {
+@media (min-width: 451px) and (max-width: 800px) {
 
   .navbar {
     background-color: rgb(23, 188, 28);
@@ -152,7 +152,7 @@ body {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   body {
     padding-bottom: 50px;
   }

@@ -144,7 +144,7 @@ li {
   }  
 } */
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   
   .transcript-portal-container {
     display: flex;

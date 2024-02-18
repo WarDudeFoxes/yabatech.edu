@@ -98,7 +98,7 @@ label small {
   background-color: rgb(240, 240, 240);
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
  
   .header {
     margin-top: 20px;

@@ -100,7 +100,7 @@ button {
   width: 100%;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   
   .form-container {
     border: 1px solid white;

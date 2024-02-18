@@ -136,7 +136,7 @@ a {
   opacity: .5;
 }
 
-@media (min-width: 421px) and (max-width: 800px) {
+@media (min-width: 451px) and (max-width: 800px) {
   
   .yct-application-content {
     background-color: white;
@@ -153,13 +153,21 @@ a {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
     
+  body {
+    padding: 15vh 0;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #198754;
+  }
+
   .login-portal-container {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    background-color: #198754; 
+    flex-direction: column; 
     padding-bottom: 20px;
     padding-top: 30px;
   }
@@ -175,7 +183,7 @@ a {
   }
 
   .yct-application-content {
-    width: 90%;
+    width: 80%;
     row-gap: 10px;
     padding-top: 10px;
   }
@@ -201,13 +209,13 @@ a {
 
   label div {
     opacity: .65;
-    font-size: .85rem;
+    font-size: .95rem;
   }
 
   label input {
     width: 100%;
     outline-color: lightblue;
-    padding: 8px;
+    padding: 10px;
   }
   ::placeholder {
     font-size: .9rem;
@@ -230,7 +238,7 @@ a {
   button {
     margin-top: 10px;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 12px;
   }
 
   .bottom-text {
@@ -238,13 +246,13 @@ a {
     margin-top: 10px;
     row-gap: 10px;
     width: 95%;
-    font-size: .85rem;
+    font-size: .95rem;
   }
 
 
   .home{
     opacity: .5;
-    font-size: .7rem;
+    font-size: .8rem;
   }
 }
 

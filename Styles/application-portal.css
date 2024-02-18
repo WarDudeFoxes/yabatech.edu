@@ -82,12 +82,12 @@ img {
 }
 
 .title {
-  font-size: .75rem;
+  font-size: 1.15rem;
   letter-spacing: .009rem;
 }
 
 .content {
-  font-size: .85rem;
+  font-size: 1rem;
   text-align: justify;
   line-height: 20px;
   opacity: .5;
@@ -97,7 +97,7 @@ a {
   color: rgba(255, 255, 255, 0.917);
   background-color: #198754;
   text-decoration: none;
-  font-size: .8rem;
+  font-size: .85rem;
   padding: 8px;
   border-radius: 6px;
   text-align: center;
@@ -121,7 +121,7 @@ a {
 }
 
 .description {
-  font-size: .85rem;
+  font-size: .94rem;
   opacity: .55;
 }
 
@@ -142,7 +142,7 @@ a {
   text-align: center;
 }
 
-@media (min-width: 421px) and (max-width: 800px) {
+@media (min-width: 451px) and (max-width: 800px) {
   .navbar {
     display: flex;
     align-items: center;
@@ -213,7 +213,7 @@ a {
     font-size: .85rem;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .navbar {
     display: flex;
     align-items: center;
@@ -233,12 +233,12 @@ a {
   }
 
   .line-1 {
-    font-size: .9rem;
+    font-size: 1.19rem;
     text-align: center;
   }
 
   .line-2 {
-    font-size: .7rem;
+    font-size: .99rem;
     opacity: .55;
     text-align: center;
   }
@@ -282,6 +282,6 @@ a {
     color: white;
     opacity: .55;
     text-align: center;
-    font-size: .85rem;
+    font-size: .95rem;
   }
 }

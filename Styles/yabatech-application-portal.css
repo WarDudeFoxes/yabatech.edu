@@ -329,7 +329,7 @@ select {
 }
 
 
-@media (min-width: 421px) and (max-width: 800px) {
+@media (min-width: 451px) and (max-width: 800px) {
   body {
     margin: 0;
     font-family: sans-serif,Arial;
@@ -391,7 +391,7 @@ select {
       
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
 
   body {
     margin: 0;
